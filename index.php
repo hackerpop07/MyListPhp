@@ -1,10 +1,10 @@
 <?php
-include "ArrayList.php";
-
-$listInteger = new ArrayList();
-$listInteger->add(1);
-$listInteger->add(2);
-$listInteger->add(3);
-
-echo $listInteger->get(1),"<br>";
-echo $listInteger->get(-1);
+include 'MyList.php';
+$myList = new MyList();
+$myList->addLast(34);
+$myList->addLast(32);
+$myList->addLast(65);
+$myList->addLast(444444444);
+$myList->add(1,33333333);
+echo $myList->size(), "<br>";
+echo "Array: ",$myList->cloneArray();
