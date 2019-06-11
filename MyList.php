@@ -25,11 +25,10 @@ class MyList
         if ($this->isInteger($index)) {
             $newArray = [];
             for ($i = 0; $i < $this->size(); $i++) {
-                array_push($newArray, $this->array[$i]);
                 if ($i == $index) {
                     array_push($newArray, $value);
-                    array_push($newArray, $this->array[$i]);
                 }
+                array_push($newArray, $this->array[$i]);
             }
             $this->array = $newArray;
         } else {
